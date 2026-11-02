@@ -79,9 +79,9 @@ if (themeToggle) {
 // 4. Трёхъязычная система (RU / KG / EN)
 // ==========================================
 const pageTitles = {
-  ru: 'Келдибек Канатбеков | Портфолио Frontend-разработчика',
-  kg: 'Келдибек Канатбеков | Frontend-иштеп чыгуучунун портфолиосу',
-  en: 'Keldibek Kanatbekov | Frontend Developer Portfolio'
+  ru: 'Канатбеков Келдибек | Портфолио Frontend-разработчика',
+  kg: 'Канатбеков Келдибек | Frontend-иштеп чыгуучунун портфолиосу',
+  en: 'Kanatbekov Keldibek | Frontend Developer Portfolio'
 };
 
 let currentLang = localStorage.getItem('keldibek_portfolio_lang') || 'ru';
