@@ -1,9 +1,26 @@
+// Принудительный сброс скролла на самый верх при открытии страницы
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo(0, 0);
+  // Если в адресной строке остался #contact или другой якорь, очищаем его, чтобы не бросало вниз
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+    window.scrollTo(0, 0);
+  }
+});
+
 // Управление загрузчиком страницы
 window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
   const loader = document.getElementById('pageLoader');
   if (loader) {
     setTimeout(() => {
       loader.classList.add('hidden');
+      window.scrollTo(0, 0);
     }, 400);
   }
 });
