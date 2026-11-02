@@ -1,16 +1,17 @@
-// Принудительный сброс скролла на самый верх при открытии страницы
+// Отключаем запоминание позиции скролла браузером и всегда открываем с самого верха
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
+
+// Если в адресной строке остался хэш (#contact или др.), очищаем его и скроллим вверх
+if (window.location.hash) {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+
 window.scrollTo(0, 0);
 
 document.addEventListener('DOMContentLoaded', () => {
   window.scrollTo(0, 0);
-  // Если в адресной строке остался #contact или другой якорь, очищаем его, чтобы не бросало вниз
-  if (window.location.hash) {
-    history.replaceState(null, null, window.location.pathname + window.location.search);
-    window.scrollTo(0, 0);
-  }
 });
 
 // Управление загрузчиком страницы
