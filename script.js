@@ -84,66 +84,6 @@ const pageTitles = {
   en: 'Keldibek Kanatbekov | Frontend Developer Portfolio'
 };
 
-const terminalSnippets = {
-  ru: `<span class="code-kw">const</span> <span class="code-var">developer</span> = {
-  <span class="code-prop">name</span>: <span class="code-str">'Келдибек Канатбеков'</span>,
-  <span class="code-prop">role</span>: <span class="code-str">'Frontend Developer'</span>,
-  <span class="code-prop">phone</span>: <span class="code-str">'0555 22 52 49'</span>,
-  <span class="code-prop">experience</span>: <span class="code-str">'3 месяца обучения'</span>,
-  <span class="code-prop">stack</span>: [
-    <span class="code-str">'HTML5'</span>, <span class="code-str">'CSS3/Flexbox'</span>,
-    <span class="code-str">'JavaScript (ES6+)'</span>,
-    <span class="code-str">'React'</span>, <span class="code-str">'Vite'</span>,
-    <span class="code-str">'Firebase'</span>, <span class="code-str">'Git/GitHub'</span>
-  ],
-  <span class="code-prop">sport</span>: <span class="code-str">'Вольная борьба 🤼'</span>,
-  <span class="code-prop">values</span>: [
-    <span class="code-str">'Дисциплина'</span>,
-    <span class="code-str">'Целеустремлённость'</span>,
-    <span class="code-str">'Постоянное обучение'</span>
-  ],
-  <span class="code-prop">goal</span>: <span class="code-str">'Fullstack Developer 🚀'</span>
-};`,
-  kg: `<span class="code-kw">const</span> <span class="code-var">developer</span> = {
-  <span class="code-prop">name</span>: <span class="code-str">'Келдибек Канатбеков'</span>,
-  <span class="code-prop">role</span>: <span class="code-str">'Frontend Developer'</span>,
-  <span class="code-prop">phone</span>: <span class="code-str">'0555 22 52 49'</span>,
-  <span class="code-prop">experience</span>: <span class="code-str">'3 айлык окуу'</span>,
-  <span class="code-prop">stack</span>: [
-    <span class="code-str">'HTML5'</span>, <span class="code-str">'CSS3/Flexbox'</span>,
-    <span class="code-str">'JavaScript (ES6+)'</span>,
-    <span class="code-str">'React'</span>, <span class="code-str">'Vite'</span>,
-    <span class="code-str">'Firebase'</span>, <span class="code-str">'Git/GitHub'</span>
-  ],
-  <span class="code-prop">sport</span>: <span class="code-str">'Эркин күрөш 🤼'</span>,
-  <span class="code-prop">values</span>: [
-    <span class="code-str">'Тартип жана эрк'</span>,
-    <span class="code-str">'Максатка умтулуучулук'</span>,
-    <span class="code-str">'Үзгүлтүксүз билим алуу'</span>
-  ],
-  <span class="code-prop">goal</span>: <span class="code-str">'Fullstack Developer 🚀'</span>
-};`,
-  en: `<span class="code-kw">const</span> <span class="code-var">developer</span> = {
-  <span class="code-prop">name</span>: <span class="code-str">'Keldibek Kanatbekov'</span>,
-  <span class="code-prop">role</span>: <span class="code-str">'Frontend Developer'</span>,
-  <span class="code-prop">phone</span>: <span class="code-str">'0555 22 52 49'</span>,
-  <span class="code-prop">experience</span>: <span class="code-str">'3 months of learning'</span>,
-  <span class="code-prop">stack</span>: [
-    <span class="code-str">'HTML5'</span>, <span class="code-str">'CSS3/Flexbox'</span>,
-    <span class="code-str">'JavaScript (ES6+)'</span>,
-    <span class="code-str">'React'</span>, <span class="code-str">'Vite'</span>,
-    <span class="code-str">'Firebase'</span>, <span class="code-str">'Git/GitHub'</span>
-  ],
-  <span class="code-prop">sport</span>: <span class="code-str">'Freestyle Wrestling 🤼'</span>,
-  <span class="code-prop">values</span>: [
-    <span class="code-str">'Discipline'</span>,
-    <span class="code-str">'Dedication'</span>,
-    <span class="code-str">'Continuous Learning'</span>
-  ],
-  <span class="code-prop">goal</span>: <span class="code-str">'Fullstack Developer 🚀'</span>
-};`
-};
-
 let currentLang = localStorage.getItem('keldibek_portfolio_lang') || 'ru';
 if (!['ru', 'kg', 'en'].includes(currentLang)) {
   currentLang = 'ru';
@@ -176,12 +116,6 @@ function applyLanguage(lang) {
       el.placeholder = ph;
     }
   });
-
-  // Обновление интерактивной карточки кода в терминале
-  const terminalCode = document.getElementById('terminalCode');
-  if (terminalCode && terminalSnippets[lang]) {
-    terminalCode.innerHTML = terminalSnippets[lang];
-  }
 
   // Обновление активной кнопки переключения языка
   document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -266,10 +200,6 @@ if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if (formFeedback) {
-      const text = formFeedback.getAttribute(`data-${currentLang}`) || formFeedback.getAttribute('data-ru');
-      if (text) {
-        formFeedback.textContent = text;
-      }
       formFeedback.classList.remove('hidden');
       contactForm.reset();
       setTimeout(() => {
