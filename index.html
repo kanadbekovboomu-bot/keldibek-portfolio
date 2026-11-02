@@ -16,7 +16,7 @@
     <div class="loader-content">
       <div class="loader-logo">keldibek<span class="dot">.</span>dev</div>
       <div class="loader-spinner"></div>
-      <div class="loader-text" data-en="Loading portfolio..." data-ru="Загрузка портфолио...">Загрузка портфолио...</div>
+      <div class="loader-text" data-ru="Загрузка портфолио..." data-kg="Портфолио жүктөлүүдө..." data-en="Loading portfolio...">Загрузка портфолио...</div>
     </div>
   </div>
 
@@ -39,11 +39,11 @@
         </div>
 
         <ul class="nav-links" id="navLinks">
-          <li><a href="#about" data-en="About" data-ru="Обо мне">Обо мне</a></li>
-          <li><a href="#skills" data-en="Skills" data-ru="Навыки">Навыки</a></li>
-          <li><a href="#projects" data-en="Projects" data-ru="Проекты">Проекты</a></li>
-          <li><a href="#discipline" data-en="Sport & Mindset" data-ru="Спорт и характер">Спорт и характер</a></li>
-          <li><a href="#contact" data-en="Contact" data-ru="Контакты">Контакты</a></li>
+          <li><a href="#about" data-ru="Обо мне" data-kg="Мен жөнүндө" data-en="About">Обо мне</a></li>
+          <li><a href="#skills" data-ru="Навыки" data-kg="Көндүмдөр" data-en="Skills">Навыки</a></li>
+          <li><a href="#projects" data-ru="Проекты" data-kg="Долбоорлор" data-en="Projects">Проекты</a></li>
+          <li><a href="#discipline" data-ru="Спорт и характер" data-kg="Спорт жана тартип" data-en="Sport & Mindset">Спорт и характер</a></li>
+          <li><a href="#contact" data-ru="Контакты" data-kg="Байланыш" data-en="Contact">Контакты</a></li>
         </ul>
 
         <div class="nav-controls">
@@ -58,12 +58,12 @@
             </svg>
           </button>
 
-          <!-- Переключатель языка (RU / EN) -->
-          <button class="lang-toggle" id="langToggle" aria-label="Переключить язык">
-            <span class="lang-option active" data-lang="ru">RU</span>
-            <span class="lang-separator">/</span>
-            <span class="lang-option" data-lang="en">EN</span>
-          </button>
+          <!-- Переключатель языка на 3 языка: RU / KG / EN -->
+          <div class="lang-switch-group" id="langSwitchGroup" aria-label="Тилди которуу / Смена языка">
+            <button class="lang-btn active" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="kg">KG</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
 
           <!-- Мобильное меню бургер -->
           <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Меню">
@@ -84,36 +84,39 @@
         <div class="hero-content">
           <div class="hero-badge">
             <span class="badge-dot"></span>
-            <span data-en="Junior Frontend Developer • 3 Months Study" data-ru="Junior Frontend-разработчик • Опыт 3 месяца">Junior Frontend-разработчик • Опыт 3 месяца</span>
+            <span data-ru="Junior Frontend-разработчик • Опыт 3 месяца" data-kg="Junior Frontend-иштеп чыгуучу • 3 айлык тажрыйба" data-en="Junior Frontend Developer • 3 Months Study">Junior Frontend-разработчик • Опыт 3 месяца</span>
           </div>
 
           <h1 class="hero-title">
-            <span data-en="Hi, I am" data-ru="Привет! Я">Привет! Я</span> 
-            <span class="accent-gradient">Келдибек Канатбеков</span>
+            <span data-ru="Привет! Я" data-kg="Салам! Мен" data-en="Hi, I am">Привет! Я</span> 
+            <span class="accent-gradient" data-ru="Келдибек Канатбеков" data-kg="Келдибек Канатбеков" data-en="Keldibek Kanatbekov">Келдибек Канатбеков</span>
           </h1>
 
-          <p class="hero-subtitle" data-en="Passionate about programming, modern web technologies, and turning ideas into sleek, responsive digital products with clean code." data-ru="Увлекаюсь программированием, современными веб-технологиями и созданием удобных, адаптивных интерфейсов. Превращаю идеи в реальные цифровые проекты.">
+          <p class="hero-subtitle" 
+             data-ru="Увлекаюсь программированием, современными веб-технологиями и созданием удобных, адаптивных интерфейсов. Превращаю идеи в реальные цифровые проекты."
+             data-kg="Программалоого, заманбап веб-технологияларга жана ыңгайлуу интерфейстерди жасоого кызыгам. Идеяларды реалдуу санариптик долбоорлорго айлантам."
+             data-en="Passionate about programming, modern web technologies, and turning ideas into sleek, responsive digital products with clean code.">
             Увлекаюсь программированием, современными веб-технологиями и созданием удобных, адаптивных интерфейсов. Превращаю идеи в реальные цифровые проекты.
           </p>
 
           <div class="hero-stats">
             <div class="stat-card">
               <span class="stat-num">3+</span>
-              <span class="stat-label" data-en="Months Learning" data-ru="Месяца учёбы">Месяца учёбы</span>
+              <span class="stat-label" data-ru="Месяца учёбы" data-kg="Айлык окуу" data-en="Months Learning">Месяца учёбы</span>
             </div>
             <div class="stat-card">
               <span class="stat-num">15+</span>
-              <span class="stat-label" data-en="Projects Built" data-ru="Созданных проектов">Созданных проектов</span>
+              <span class="stat-label" data-ru="Созданных проектов" data-kg="Жасалган долбоорлор" data-en="Projects Built">Созданных проектов</span>
             </div>
             <div class="stat-card">
               <span class="stat-num">100%</span>
-              <span class="stat-label" data-en="Focus & Spirit" data-ru="Дисциплина">Дисциплина</span>
+              <span class="stat-label" data-ru="Дисциплина" data-kg="Тартип жана эрк" data-en="Focus & Spirit">Дисциплина</span>
             </div>
           </div>
 
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">
-              <span data-en="Explore Projects" data-ru="Смотреть проекты">Смотреть проекты</span>
+              <span data-ru="Смотреть проекты" data-kg="Долбоорлорду көрүү" data-en="Explore Projects">Смотреть проекты</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="tel:+996555225249" class="btn btn-outline" title="Позвонить: 0555 22 52 49">
@@ -141,7 +144,7 @@
               <span class="terminal-title">developer.config.js</span>
             </div>
             <div class="terminal-body">
-              <pre><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
+              <pre><code id="terminalCode"><span class="code-kw">const</span> <span class="code-var">developer</span> = {
   <span class="code-prop">name</span>: <span class="code-str">'Келдибек Канатбеков'</span>,
   <span class="code-prop">role</span>: <span class="code-str">'Frontend Developer'</span>,
   <span class="code-prop">phone</span>: <span class="code-str">'0555 22 52 49'</span>,
@@ -163,7 +166,7 @@
             </div>
             <div class="terminal-footer">
               <span class="status-indicator"></span>
-              <span data-en="Open for opportunities & internship" data-ru="Открыт к стажировкам и проектам">Открыт к стажировкам и проектам</span>
+              <span data-ru="Открыт к стажировкам и проектам" data-kg="Стажировкаларга жана долбоорлорго ачыкмын" data-en="Open for opportunities & internship">Открыт к стажировкам и проектам</span>
             </div>
           </div>
         </div>
@@ -175,54 +178,65 @@
   <section class="section" id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-en="Introduction" data-ru="Знакомство">Знакомство</span>
-        <h2 class="section-title" data-en="About Me" data-ru="Обо мне">Обо мне</h2>
-        <p class="section-subtitle" data-en="My path, dedication, and long-term vision" data-ru="Мой путь в веб-разработке, цели и ценности">Мой путь в веб-разработке, цели и ценности</p>
+        <span class="section-tag" data-ru="Знакомство" data-kg="Таанышуу" data-en="Introduction">Знакомство</span>
+        <h2 class="section-title" data-ru="Обо мне" data-kg="Мен жөнүндө" data-en="About Me">Обо мне</h2>
+        <p class="section-subtitle" data-ru="Мой путь в веб-разработке, цели и ценности" data-kg="Менин программалоодогу жолум, максаттарым жана баалуулуктарым" data-en="My path, dedication, and long-term vision">Мой путь в веб-разработке, цели и ценности</p>
       </div>
 
       <div class="about-grid">
         <div class="about-card main-bio">
           <div class="card-icon-badge">👨‍💻</div>
-          <h3 data-en="Frontend Journey" data-ru="Путь в программировании">Путь в программировании</h3>
-          <p data-en="I am an aspiring Frontend Developer who loves turning complex ideas into intuitive, elegant digital interfaces. Over the past 3 months of focused and intensive study, I have gained solid practical knowledge in HTML5, CSS3, modern JavaScript, and React, alongside essential tools like Vite and Git." data-ru="Я начинающий Frontend-разработчик, увлеченный программированием, современными технологиями и созданием сайтов. За 3 месяца интенсивного обучения я освоил крепкую базу: HTML5, CSS3, современный JavaScript и React, а также инструменты сборки и контроля версий.">
+          <h3 data-ru="Путь в программировании" data-kg="Программалоодогу кадамдарым" data-en="Frontend Journey">Путь в программировании</h3>
+          <p data-ru="Я начинающий Frontend-разработчик, увлеченный программированием, современными технологиями и созданием сайтов. За 3 месяца интенсивного обучения я освоил крепкую базу: HTML5, CSS3, современный JavaScript и React, а также инструменты сборки и контроля версий."
+             data-kg="Мен веб-сайттарды жана заманбап санариптик чечимдерди түзүүгө кызыккан Frontend-иштеп чыгуучумун. 3 айлык интенсивдүү окуунун ичинде HTML5, CSS3, заманбап JavaScript жана React, ошондой эле долбоорду чогултуу жана версияларды көзөмөлдөө куралдарын өздөштүрдүм."
+             data-en="I am an aspiring Frontend Developer who loves turning complex ideas into intuitive, elegant digital interfaces. Over the past 3 months of focused and intensive study, I have gained solid practical knowledge in HTML5, CSS3, modern JavaScript, and React, alongside essential tools like Vite and Git.">
             Я начинающий Frontend-разработчик, увлеченный программированием, современными технологиями и созданием сайтов. За 3 месяца интенсивного обучения я освоил крепкую базу: HTML5, CSS3, современный JavaScript и React, а также инструменты сборки и контроля версий.
           </p>
-          <p data-en="I believe that consistent practice and daily learning are the keys to mastery. I don't just write code — I build complete, test-covered applications from scratch." data-ru="Мне нравится превращать идеи в реальные цифровые продукты, создавать удобные интерфейсы и находить решения нестандартных задач. Я верю, что постоянная практика и дисциплина — ключ к большим достижениям.">
+          <p data-ru="Мне нравится превращать идеи в реальные цифровые продукты, создавать удобные интерфейсы и находить решения нестандартных задач. Я верю, что постоянная практика и дисциплина — ключ к большим достижениям."
+             data-kg="Мага идеяларды реалдуу санариптик продуктуларга айландыруу, ыңгайлуу интерфейстерди жасоо жана татаал маселелердин чечимин табуу жагат. Үзгүлтүксүз тажрыйба жана бекем тартип — чоң ийгиликтин ачкычы деп билем."
+             data-en="I believe that consistent practice and daily learning are the keys to mastery. I don't just write code — I build complete, test-covered applications from scratch.">
             Мне нравится превращать идеи в реальные цифровые продукты, создавать удобные интерфейсы и находить решения нестандартных задач. Я верю, что постоянная практика и дисциплина — ключ к большим достижениям.
           </p>
         </div>
 
         <div class="about-card target-card">
           <div class="card-icon-badge">🎯</div>
-          <h3 data-en="My Ambition & Goal" data-ru="Моя главная цель">Моя главная цель</h3>
-          <p data-en="My objective is to become a top-tier Fullstack Developer, create high-impact software products, and eventually bring my own IT startup and business concepts to life." data-ru="Стать профессиональным Fullstack-разработчиком, создавать полезные цифровые продукты и в будущем реализовать собственные IT-проекты и технологические стартапы.">
+          <h3 data-ru="Моя главная цель" data-kg="Менин негизги максатым" data-en="My Ambition & Goal">Моя главная цель</h3>
+          <p data-ru="Стать профессиональным Fullstack-разработчиком, создавать полезные цифровые продукты и в будущем реализовать собственные IT-проекты и технологические стартапы."
+             data-kg="Кесипкөй Fullstack-иштеп чыгуучу болуу, пайдалуу санариптик продуктуларды жаратуу жана келечекте өзүмдүн IT-долбоорлорумду жана стартаптарымды ишке ашыруу."
+             data-en="My objective is to become a top-tier Fullstack Developer, create high-impact software products, and eventually bring my own IT startup and business concepts to life.">
             Стать профессиональным Fullstack-разработчиком, создавать полезные цифровые продукты и в будущем реализовать собственные IT-проекты и технологические стартапы.
           </p>
           <div class="goal-badges">
-            <span class="pill-badge">🚀 Fullstack Mastery</span>
-            <span class="pill-badge">💡 IT Startups</span>
-            <span class="pill-badge">🌐 Impactful Web Apps</span>
+            <span class="pill-badge" data-ru="🚀 Fullstack Мастерство" data-kg="🚀 Fullstack чеберчилик" data-en="🚀 Fullstack Mastery">🚀 Fullstack Mastery</span>
+            <span class="pill-badge" data-ru="💡 IT-Стартапы" data-kg="💡 IT-Стартаптар" data-en="💡 IT Startups">💡 IT Startups</span>
+            <span class="pill-badge" data-ru="🌐 Веб-продукты" data-kg="🌐 Веб-продуктулар" data-en="🌐 Web Products">🌐 Web Products</span>
           </div>
         </div>
 
         <div class="about-card qualities-card">
           <div class="card-icon-badge">💎</div>
-          <h3 data-en="Core Personal Qualities" data-ru="Ключевые качества">Ключевые качества</h3>
+          <h3 data-ru="Ключевые качества" data-kg="Негизги сапаттарым" data-en="Core Personal Qualities">Ключевые качества</h3>
           <ul class="qualities-list">
             <li>
-              <strong>🎯 Целеустремлённость</strong> — четкий фокус на результате и доведение задач до конца.
+              <strong data-ru="🎯 Целеустремлённость" data-kg="🎯 Максатка умтулуучулук" data-en="🎯 Purposefulness">🎯 Целеустремлённость</strong>
+              <span data-ru="Четкий фокус на результате и доведение задач до конца." data-kg="Жыйынтыкка так көңүл буруу жана ишти аягына чейин жеткирүү." data-en="Sharp focus on results and completing every task.">Четкий фокус на результате и доведение задач до конца.</span>
             </li>
             <li>
-              <strong>⚡ Ответственность</strong> — внимание к качеству кода, срокам и требованиям.
+              <strong data-ru="⚡ Ответственность" data-kg="⚡ Жоопкерчилик" data-en="⚡ Responsibility">⚡ Ответственность</strong>
+              <span data-ru="Внимание к качеству кода, срокам и требованиям." data-kg="Коддун сапатына, мөөнөтүнө жана талаптарына дыкат мамиле." data-en="Attention to code quality, deadlines, and requirements.">Внимание к качеству кода, срокам и требованиям.</span>
             </li>
             <li>
-              <strong>🛡️ Дисциплина</strong> — ежедневная практика и систематическое обучение.
+              <strong data-ru="🛡️ Дисциплина" data-kg="🛡️ Тартип" data-en="🛡️ Discipline">🛡️ Дисциплина</strong>
+              <span data-ru="Ежедневная практика и систематическое обучение." data-kg="Күн сайын код жазуу жана системалуу билим алуу." data-en="Daily coding practice and structured learning.">Ежедневная практика и систематическое обучение.</span>
             </li>
             <li>
-              <strong>📈 Стремление к росту</strong> — постоянное изучение новых инструментов и подходов.
+              <strong data-ru="📈 Стремление к росту" data-kg="📈 Өнүгүүгө умтулуу" data-en="📈 Constant Growth">📈 Стремление к росту</strong>
+              <span data-ru="Постоянное изучение новых инструментов и подходов." data-kg="Жаңы технологияларды жана ыкмаларды тынымсыз үйрөнүү." data-en="Proactive learning of cutting-edge tools and patterns.">Постоянное изучение новых инструментов и подходов.</span>
             </li>
             <li>
-              <strong>🧩 Решение задач</strong> — умение разбивать сложные проблемы на понятные шаги.
+              <strong data-ru="🧩 Решение задач" data-kg="🧩 Маселе чечүү" data-en="🧩 Problem Solving">🧩 Решение задач</strong>
+              <span data-ru="Умение разбивать сложные проблемы на понятные шаги." data-kg="Татаал көйгөйлөрдү жөнөкөй жана түшүнүктүү кадамдарга бөлүү." data-en="Breaking complex challenges into clear, actionable steps.">Умение разбивать сложные проблемы на понятные шаги.</span>
             </li>
           </ul>
         </div>
@@ -237,24 +251,26 @@
         <div class="discipline-content">
           <div class="discipline-tag">
             <span>🤼</span>
-            <span data-en="Sport & Mindset" data-ru="Спорт и характер">Спорт и характер</span>
+            <span data-ru="Спорт и характер" data-kg="Спорт жана тартип" data-en="Sport & Mindset">Спорт и характер</span>
           </div>
-          <h2 data-en="Freestyle Wrestling & Coding Discipline" data-ru="Вольная борьба и дисциплина в коде">Вольная борьба и дисциплина в коде</h2>
-          <p data-en="Besides programming, I actively practice freestyle wrestling. Sports teach me perseverance, resilience under pressure, and mental stamina. The same principles apply directly to software development: when facing bugs, complex logic, or challenging architectures, sports discipline drives me to analyze, persist, and overcome every obstacle." data-ru="Помимо программирования, я занимаюсь вольной борьбой. Спорт развивает во мне железную дисциплину, терпение и силу характера. Эти же принципы я переношу в программирование: сталкиваясь со сложными багами или новыми технологиями, я не отступаю, а системно анализирую и довожу дело до победного результата.">
+          <h2 data-ru="Вольная борьба и дисциплина в коде" data-kg="Эркин күрөш жана программалоодогу тартип" data-en="Freestyle Wrestling & Coding Discipline">Вольная борьба и дисциплина в коде</h2>
+          <p data-ru="Помимо программирования, я занимаюсь вольной борьбой. Спорт развивает во мне железную дисциплину, терпение и силу характера. Эти же принципы я переношу в программирование: сталкиваясь со сложными багами или новыми технологиями, я не отступаю, а системно анализирую и довожу дело до победного результата."
+             data-kg="Программалоодон тышкары мен эркин күрөш менен машыгам. Спорт менин эркимди, чыдамкайлыгымды жана темирдей тартипти калыптандырат. Бул сапаттар программалоодо түздөн-түз жардам берет: татаал каталарга (багдарга) же жаңы технологияларга туш болгондо артка чегинбей, системалуу түрдө анализдеп, ишти жеңишке чейин жеткирем."
+             data-en="Besides programming, I actively practice freestyle wrestling. Sports teach me perseverance, resilience under pressure, and mental stamina. The same principles apply directly to software development: when facing bugs, complex logic, or challenging architectures, sports discipline drives me to analyze, persist, and overcome every obstacle.">
             Помимо программирования, я занимаюсь вольной борьбой. Спорт развивает во мне железную дисциплину, терпение и силу характера. Эти же принципы я переношу в программирование: сталкиваясь со сложными багами или новыми технологиями, я не отступаю, а системно анализирую и довожу дело до победного результата.
           </p>
           <div class="discipline-stats">
             <div class="mini-stat">
-              <span class="mini-val">Терпение</span>
-              <span class="mini-lbl" data-en="Calm in hard situations" data-ru="Спокойствие перед трудностями">Спокойствие перед трудностями</span>
+              <span class="mini-val" data-ru="Терпение" data-kg="Сабырдуулук" data-en="Patience">Терпение</span>
+              <span class="mini-lbl" data-ru="Спокойствие перед трудностями" data-kg="Кыйынчылыктарда сабырдуу болуу" data-en="Calm in hard situations">Спокойствие перед трудностями</span>
             </div>
             <div class="mini-stat">
-              <span class="mini-val">Характер</span>
-              <span class="mini-lbl" data-en="Relentless problem solver" data-ru="Стремление побеждать баги">Стремление побеждать баги</span>
+              <span class="mini-val" data-ru="Характер" data-kg="Эрк жана мүнөз" data-en="Character">Характер</span>
+              <span class="mini-lbl" data-ru="Стремление побеждать баги" data-kg="Багдарды жеңүүгө болгон эрк" data-en="Relentless problem solver">Стремление побеждать баги</span>
             </div>
             <div class="mini-stat">
-              <span class="mini-val">Фокус</span>
-              <span class="mini-lbl" data-en="Unwavering dedication" data-ru="100% концентрация на цели">100% концентрация на цели</span>
+              <span class="mini-val" data-ru="Фокус" data-kg="Фокус" data-en="Focus">Фокус</span>
+              <span class="mini-lbl" data-ru="100% концентрация на цели" data-kg="Максатка 100% топтолуу" data-en="Unwavering dedication">100% концентрация на цели</span>
             </div>
           </div>
         </div>
@@ -266,33 +282,33 @@
   <section class="section" id="skills">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-en="Expertise" data-ru="Стек">Стек</span>
-        <h2 class="section-title" data-en="Technical Skills" data-ru="Мои навыки">Мои навыки</h2>
-        <p class="section-subtitle" data-en="Technologies and tools I use to create web applications" data-ru="Технологии и инструменты, которые я применяю в разработке">Технологии и инструменты, которые я применяю в разработке</p>
+        <span class="section-tag" data-ru="Стек" data-kg="Стек" data-en="Expertise">Стек</span>
+        <h2 class="section-title" data-ru="Мои навыки" data-kg="Менин көндүмдөрүм" data-en="Technical Skills">Мои навыки</h2>
+        <p class="section-subtitle" data-ru="Технологии и инструменты, которые я применяю в разработке" data-kg="Мен веб-иштеп чыгууда колдонгон технологиялар жана куралдар" data-en="Technologies and tools I use to create web applications">Технологии и инструменты, которые я применяю в разработке</p>
       </div>
 
       <div class="skills-grid">
         <div class="skill-category-card">
           <div class="category-header">
             <span class="cat-icon">🎨</span>
-            <h3>Frontend Core</h3>
+            <h3 data-ru="Frontend база" data-kg="Frontend негиздери" data-en="Frontend Core">Frontend Core</h3>
           </div>
           <div class="skill-pills">
             <div class="skill-pill">
               <span class="pill-name">HTML5</span>
-              <span class="pill-level">Семантика, доступность</span>
+              <span class="pill-level" data-ru="Семантика, доступность" data-kg="Семантика, ыңгайлуулук" data-en="Semantics, accessibility">Семантика, доступность</span>
             </div>
             <div class="skill-pill">
               <span class="pill-name">CSS3 & Flexbox</span>
-              <span class="pill-level">Flex, Grid, анимации</span>
+              <span class="pill-level" data-ru="Flex, Grid, анимации" data-kg="Flex, Grid, анимациялар" data-en="Flex, Grid, animations">Flex, Grid, анимации</span>
             </div>
             <div class="skill-pill">
-              <span class="pill-name">Адаптивный дизайн</span>
-              <span class="pill-level">Mobile First, Media Queries</span>
+              <span class="pill-name" data-ru="Адаптивный дизайн" data-kg="Адаптивдүү дизайн" data-en="Responsive Design">Адаптивный дизайн</span>
+              <span class="pill-level">Mobile First</span>
             </div>
             <div class="skill-pill">
               <span class="pill-name">Tailwind CSS</span>
-              <span class="pill-level">Утилитарный современный UI</span>
+              <span class="pill-level" data-ru="Утилитарный UI" data-kg="Утилитардык UI" data-en="Utility-first UI">Утилитарный UI</span>
             </div>
           </div>
         </div>
@@ -300,7 +316,7 @@
         <div class="skill-category-card">
           <div class="category-header">
             <span class="cat-icon">⚛️</span>
-            <h3>JavaScript & React</h3>
+            <h3 data-ru="JavaScript & React" data-kg="JavaScript жана React" data-en="JavaScript & React">JavaScript & React</h3>
           </div>
           <div class="skill-pills">
             <div class="skill-pill">
@@ -309,15 +325,15 @@
             </div>
             <div class="skill-pill">
               <span class="pill-name">React</span>
-              <span class="pill-level">Хуки, компоненты, состояние</span>
+              <span class="pill-level" data-ru="Хуки, компоненты, состояние" data-kg="Хуктар, компоненттер, абал" data-en="Hooks, components, state">Хуки, компоненты, состояние</span>
             </div>
             <div class="skill-pill">
               <span class="pill-name">Vite</span>
-              <span class="pill-level">Мгновенный билд и HMR</span>
+              <span class="pill-level" data-ru="Мгновенный билд и HMR" data-kg="Ыкчам чогултуу жана HMR" data-en="Instant build & HMR">Мгновенный билд и HMR</span>
             </div>
             <div class="skill-pill">
               <span class="pill-name">Web Audio & Canvas</span>
-              <span class="pill-level">Звук и интерактивная графика</span>
+              <span class="pill-level" data-ru="Звук и графика" data-kg="Үн жана графика" data-en="Audio & Graphics">Звук и графика</span>
             </div>
           </div>
         </div>
@@ -325,12 +341,12 @@
         <div class="skill-category-card">
           <div class="category-header">
             <span class="cat-icon">🛠️</span>
-            <h3>Инструменты & Backend</h3>
+            <h3 data-ru="Инструменты & Backend" data-kg="Куралдар жана Backend" data-en="Tools & Backend">Инструменты & Backend</h3>
           </div>
           <div class="skill-pills">
             <div class="skill-pill">
               <span class="pill-name">Git & GitHub</span>
-              <span class="pill-level">Ветвление, коммиты, Pages</span>
+              <span class="pill-level">Pages, Commits, Branches</span>
             </div>
             <div class="skill-pill">
               <span class="pill-name">Firebase Auth</span>
@@ -338,11 +354,11 @@
             </div>
             <div class="skill-pill">
               <span class="pill-name">Cloud Firestore</span>
-              <span class="pill-level">Базы данных real-time</span>
+              <span class="pill-level">Real-time NoSQL Data</span>
             </div>
             <div class="skill-pill">
-              <span class="pill-name">Vitest & Тестирование</span>
-              <span class="pill-level">Юнит и компонентные тесты</span>
+              <span class="pill-name">Vitest</span>
+              <span class="pill-level" data-ru="Юнит и компонентные тесты" data-kg="Юнит жана компоненттик тесттер" data-en="Unit & component testing">Юнит и компонентные тесты</span>
             </div>
           </div>
         </div>
@@ -354,17 +370,17 @@
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-en="Portfolio" data-ru="Портфолио">Портфолио</span>
-        <h2 class="section-title" data-en="Featured Projects" data-ru="Мои проекты">Мои проекты</h2>
-        <p class="section-subtitle" data-en="Real interactive applications with live deployments and open source code" data-ru="Реальные интерактивные приложения с рабочими демо и открытым исходным кодом">Реальные интерактивные приложения с рабочими демо и открытым исходным кодом</p>
+        <span class="section-tag" data-ru="Портфолио" data-kg="Портфолио" data-en="Portfolio">Портфолио</span>
+        <h2 class="section-title" data-ru="Мои проекты" data-kg="Менин долбоорлорум" data-en="Featured Projects">Мои проекты</h2>
+        <p class="section-subtitle" data-ru="Реальные интерактивные приложения с рабочими демо и открытым исходным кодом" data-kg="Иштеп жаткан демолору жана ачык коду бар реалдуу интерактивдүү долбоорлор" data-en="Real interactive applications with live deployments and open source code">Реальные интерактивные приложения с рабочими демо и открытым исходным кодом</p>
       </div>
 
       <!-- Фильтры проектов -->
       <div class="project-filters">
-        <button class="filter-btn active" data-filter="all" data-en="All Projects" data-ru="Все проекты">Все проекты</button>
-        <button class="filter-btn" data-filter="react" data-en="React & Firebase" data-ru="React & Firebase">React & Firebase</button>
-        <button class="filter-btn" data-filter="education" data-en="Education" data-ru="Образование">Образование</button>
-        <button class="filter-btn" data-filter="games" data-en="Games & Tools" data-ru="Игры и утилиты">Игры и утилиты</button>
+        <button class="filter-btn active" data-filter="all" data-ru="Все проекты" data-kg="Бардык долбоорлор" data-en="All Projects">Все проекты</button>
+        <button class="filter-btn" data-filter="react" data-ru="React & Firebase" data-kg="React жана Firebase" data-en="React & Firebase">React & Firebase</button>
+        <button class="filter-btn" data-filter="education" data-ru="Образование" data-kg="Билим берүү" data-en="Education">Образование</button>
+        <button class="filter-btn" data-filter="games" data-ru="Игры и утилиты" data-kg="Оюндар жана куралдар" data-en="Games & Tools">Игры и утилиты</button>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
@@ -374,7 +390,7 @@
           <div class="project-banner bg-grad-bilim">
             <div class="project-status-badge">
               <span class="status-pulse"></span>
-              <span data-en="Featured Project" data-ru="Особый проект">Особый проект</span>
+              <span data-ru="Особый проект" data-kg="Өзгөчө долбоор" data-en="Featured Project">Особый проект</span>
             </div>
             <div class="banner-icon">📚</div>
           </div>
@@ -383,15 +399,18 @@
               <span class="tag">HTML5</span>
               <span class="tag">CSS3</span>
               <span class="tag">JavaScript</span>
-              <span class="tag">Образование</span>
+              <span class="tag" data-ru="Образование" data-kg="Билим" data-en="Education">Образование</span>
             </div>
             <h3 class="project-title">BilimKitep</h3>
-            <p class="project-desc" data-en="Educational web platform dedicated to literature, online learning, and student resource accessibility. Designed with clean typography and responsive layout." data-ru="Веб-сайт, посвящённый образовательной тематике, книгам и учебным материалам. Помогает ученикам находить нужные ресурсы с удобной навигацией.">
+            <p class="project-desc" 
+               data-ru="Веб-сайт, посвящённый образовательной тематике, книгам и учебным материалам. Помогает ученикам находить нужные ресурсы с удобной навигацией."
+               data-kg="Билим берүүгө, китептерге жана окуу материалдарына арналган веб-платформа. Окуучуларга керектүү маалыматты ыңгайлуу табууга жардам берет."
+               data-en="Educational web platform dedicated to literature, online learning, and student resource accessibility. Designed with clean typography and responsive layout.">
               Веб-сайт, посвящённый образовательной тематике, книгам и учебным материалам. Помогает ученикам находить нужные ресурсы с удобной навигацией.
             </p>
             <div class="project-links">
               <a href="#contact" class="btn-link primary">
-                <span data-en="Details" data-ru="Подробнее">Подробнее</span>
+                <span data-ru="Подробнее" data-kg="Кеңири" data-en="Details">Подробнее</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
@@ -403,7 +422,7 @@
           <div class="project-banner bg-grad-monkey">
             <div class="project-status-badge live">
               <span class="status-pulse"></span>
-              <span data-en="Live on GitHub Pages" data-ru="Работает онлайн">Работает онлайн</span>
+              <span data-ru="Работает онлайн" data-kg="Онлайн жеткиликтүү" data-en="Live on GitHub Pages">Работает онлайн</span>
             </div>
             <div class="banner-icon">⌨️</div>
           </div>
@@ -415,12 +434,15 @@
               <span class="tag">48 Tests</span>
             </div>
             <h3 class="project-title">Monkeytype Clone</h3>
-            <p class="project-desc" data-en="Speed typing test application featuring time modes (15s, 30s, 60s), words modes, real-time WPM & accuracy calculations, SVG sparkline graphs, and Firebase history sync." data-ru="Минималистичный тренажер слепой печати: режимы времени и слов, точный расчёт WPM и точности, SVG-графики сессий, авторизация и сохранение истории в Cloud Firestore.">
+            <p class="project-desc" 
+               data-ru="Минималистичный тренажер слепой печати: режимы времени и слов, точный расчёт WPM и точности, SVG-графики сессий, авторизация и сохранение истории в Cloud Firestore."
+               data-kg="Терүүнүн ылдамдыгын өлчөөчү тренажер: убакыт жана сөз режимдери, WPM жана тактыкты реалдуу убакытта эсептөө, SVG-графиктер жана Firebase Firestore'го сактоо."
+               data-en="Speed typing test application featuring time modes (15s, 30s, 60s), words modes, real-time WPM & accuracy calculations, SVG sparkline graphs, and Firebase history sync.">
               Минималистичный тренажер слепой печати: режимы времени и слов, точный расчёт WPM и точности, SVG-графики сессий, авторизация и сохранение истории в Cloud Firestore.
             </p>
             <div class="project-links">
               <a href="https://kanadbekovboomu-bot.github.io/react-monkeytype-clone/" target="_blank" rel="noopener" class="btn-link primary">
-                <span data-en="Live Demo" data-ru="Демо">Демо ↗</span>
+                <span data-ru="Демо ↗" data-kg="Демо ↗" data-en="Live Demo ↗">Демо ↗</span>
               </a>
               <a href="https://github.com/kanadbekovboomu-bot/react-monkeytype-clone" target="_blank" rel="noopener" class="btn-link secondary">
                 <span>GitHub</span>
@@ -434,7 +456,7 @@
           <div class="project-banner bg-grad-block">
             <div class="project-status-badge live">
               <span class="status-pulse"></span>
-              <span data-en="Live on GitHub Pages" data-ru="Работает онлайн">Работает онлайн</span>
+              <span data-ru="Работает онлайн" data-kg="Онлайн жеткиликтүү" data-en="Live on GitHub Pages">Работает онлайн</span>
             </div>
             <div class="banner-icon">🧩</div>
           </div>
@@ -446,12 +468,15 @@
               <span class="tag">Firebase</span>
             </div>
             <h3 class="project-title">Block Blast Puzzle</h3>
-            <p class="project-desc" data-en="Addictive 8x8 grid block puzzle game with 23 polyomino shapes, concurrent row/column line clears, combo multipliers, sound effects, and Firebase high score leaderboard." data-ru="Логическая головоломка 8×8 с 23 типами полиомино, одновременной очисткой строк и столбцов, серией комбо-очков, поддержкой тач-устройств и таблицей лидеров.">
+            <p class="project-desc" 
+               data-ru="Логическая головоломка 8×8 с 23 типами полиомино, одновременной очисткой строк и столбцов, серией комбо-очков, поддержкой тач-устройств и таблицей лидеров."
+               data-kg="8×8 торчосундагы логикалык баш катырма оюну: 23 полиомино фигурасы, саптарды жана мамычаларды бирге тазалоо, комбо упайлар жана рекорддор таблицасы."
+               data-en="Addictive 8x8 grid block puzzle game with 23 polyomino shapes, concurrent row/column line clears, combo multipliers, sound effects, and Firebase high score leaderboard.">
               Логическая головоломка 8×8 с 23 типами полиомино, одновременной очисткой строк и столбцов, серией комбо-очков, поддержкой тач-устройств и таблицей лидеров.
             </p>
             <div class="project-links">
               <a href="https://kanadbekovboomu-bot.github.io/react-block-blast/" target="_blank" rel="noopener" class="btn-link primary">
-                <span data-en="Live Demo" data-ru="Демо">Демо ↗</span>
+                <span data-ru="Демо ↗" data-kg="Демо ↗" data-en="Live Demo ↗">Демо ↗</span>
               </a>
               <a href="https://github.com/kanadbekovboomu-bot/react-block-blast" target="_blank" rel="noopener" class="btn-link secondary">
                 <span>GitHub</span>
@@ -465,7 +490,7 @@
           <div class="project-banner bg-grad-lms">
             <div class="project-status-badge live">
               <span class="status-pulse"></span>
-              <span data-en="Live on GitHub Pages" data-ru="Работает онлайн">Работает онлайн</span>
+              <span data-ru="Работает онлайн" data-kg="Онлайн жеткиликтүү" data-en="Live on GitHub Pages">Работает онлайн</span>
             </div>
             <div class="banner-icon">🎓</div>
           </div>
@@ -477,12 +502,15 @@
               <span class="tag">15 Lessons</span>
             </div>
             <h3 class="project-title">Web Dev LMS Platform</h3>
-            <p class="project-desc" data-en="Interactive web development platform with 15 structured practical lessons in HTML, CSS, and JS. Features an in-browser code editor and automated DOM/style exercise validator." data-ru="Обучающая платформа с 15 практическими уроками по HTML, CSS и JavaScript: встроенный редактор, живой iframe-просмотр, автоматическая проверка DOM-критериев и сохранение прогресса.">
+            <p class="project-desc" 
+               data-ru="Обучающая платформа с 15 практическими уроками по HTML, CSS и JavaScript: встроенный редактор, живой iframe-просмотр, автоматическая проверка DOM-критериев и сохранение прогресса."
+               data-kg="HTML, CSS жана JavaScript боюнча 15 практикалык сабагы бар билим берүү платформасы: ичине орнотулган код редактору, автоматтык текшерүү жана прогрессти сактоо."
+               data-en="Interactive web development platform with 15 structured practical lessons in HTML, CSS, and JS. Features an in-browser code editor and automated DOM/style exercise validator.">
               Обучающая платформа с 15 практическими уроками по HTML, CSS и JavaScript: встроенный редактор, живой iframe-просмотр, автоматическая проверка DOM-критериев и сохранение прогресса.
             </p>
             <div class="project-links">
               <a href="https://kanadbekovboomu-bot.github.io/react-webdev-lms/" target="_blank" rel="noopener" class="btn-link primary">
-                <span data-en="Live Demo" data-ru="Демо">Демо ↗</span>
+                <span data-ru="Демо ↗" data-kg="Демо ↗" data-en="Live Demo ↗">Демо ↗</span>
               </a>
               <a href="https://github.com/kanadbekovboomu-bot/react-webdev-lms" target="_blank" rel="noopener" class="btn-link secondary">
                 <span>GitHub</span>
@@ -496,7 +524,7 @@
           <div class="project-banner bg-grad-editor">
             <div class="project-status-badge live">
               <span class="status-pulse"></span>
-              <span data-en="Live on GitHub Pages" data-ru="Работает онлайн">Работает онлайн</span>
+              <span data-ru="Работает онлайн" data-kg="Онлайн жеткиликтүү" data-en="Live on GitHub Pages">Работает онлайн</span>
             </div>
             <div class="banner-icon">💻</div>
           </div>
@@ -508,12 +536,15 @@
               <span class="tag">Templates</span>
             </div>
             <h3 class="project-title">HTML/CSS/JS Code Editor</h3>
-            <p class="project-desc" data-en="Multi-pane online code sandbox with isolated live preview, virtual console capturing console.log/errors, pre-built template presets, and JSON project export/import." data-ru="Многопанельная песочница веб-разработки: безопасный запуск кода в изолированном iframe, перехват консольных логов, коллекция шаблонов и экспорт сниппетов.">
+            <p class="project-desc" 
+               data-ru="Многопанельная песочница веб-разработки: безопасный запуск кода в изолированном iframe, перехват консольных логов, коллекция шаблонов и экспорт сниппетов."
+               data-kg="Көп панелдүү веб-код редактору: кодду обочолонгон iframe'де иштетүү, виртуалдык консоль, даяр калыптар топтому жана долбоорду экспорттоо."
+               data-en="Multi-pane online code sandbox with isolated live preview, virtual console capturing console.log/errors, pre-built template presets, and JSON snippet export/import.">
               Многопанельная песочница веб-разработки: безопасный запуск кода в изолированном iframe, перехват консольных логов, коллекция шаблонов и экспорт сниппетов.
             </p>
             <div class="project-links">
               <a href="https://kanadbekovboomu-bot.github.io/react-code-editor/" target="_blank" rel="noopener" class="btn-link primary">
-                <span data-en="Live Demo" data-ru="Демо">Демо ↗</span>
+                <span data-ru="Демо ↗" data-kg="Демо ↗" data-en="Live Demo ↗">Демо ↗</span>
               </a>
               <a href="https://github.com/kanadbekovboomu-bot/react-code-editor" target="_blank" rel="noopener" class="btn-link secondary">
                 <span>GitHub</span>
@@ -527,7 +558,7 @@
           <div class="project-banner bg-grad-vanilla">
             <div class="project-status-badge">
               <span class="status-pulse"></span>
-              <span data-en="10 Vanilla Projects" data-ru="10 проектов">10 проектов</span>
+              <span data-ru="10 проектов" data-kg="10 долбоор" data-en="10 Vanilla Projects">10 проектов</span>
             </div>
             <div class="banner-icon">⚡</div>
           </div>
@@ -539,12 +570,15 @@
               <span class="tag">Web Audio</span>
             </div>
             <h3 class="project-title">10 Vanilla JS Projects Hub</h3>
-            <p class="project-desc" data-en="Comprehensive suite of 10 interactive pure JavaScript apps: Glassmorphism Calculator with history, Smart To-Do list, Global Weather (Open-Meteo API), IT Quiz, Pomodoro timer, and Canvas Paint." data-ru="Коллекция из 10 приложений на чистом JavaScript: калькулятор с историей, планировщик задач, прогноз погоды с REST API, викторина со звуками, помодоро-таймер и рисовалка на Canvas.">
+            <p class="project-desc" 
+               data-ru="Коллекция из 10 приложений на чистом JavaScript: калькулятор с историей, планировщик задач, прогноз погоды с REST API, викторина со звуками, помодоро-таймер и рисовалка на Canvas."
+               data-kg="Таза JavaScript'те жазылган 10 пайдалуу тиркеменин топтому: тарыхы бар калькулятор, иш пландоочу, аба ырайы, викторина, помодоро-таймер жана сүрөт тартуу холсту."
+               data-en="Comprehensive suite of 10 interactive pure JavaScript apps: Glassmorphism Calculator with history, Smart To-Do list, Global Weather (Open-Meteo API), IT Quiz, Pomodoro timer, and Canvas Paint.">
               Коллекция из 10 приложений на чистом JavaScript: калькулятор с историей, планировщик задач, прогноз погоды с REST API, викторина со звуками, помодоро-таймер и рисовалка на Canvas.
             </p>
             <div class="project-links">
               <a href="../index.html" class="btn-link primary">
-                <span data-en="Open Hub" data-ru="Открыть хаб">Открыть хаб ↗</span>
+                <span data-ru="Открыть хаб ↗" data-kg="Хабды ачуу ↗" data-en="Open Hub ↗">Открыть хаб ↗</span>
               </a>
               <a href="https://github.com/kanadbekovboomu-bot" target="_blank" rel="noopener" class="btn-link secondary">
                 <span>GitHub</span>
@@ -561,9 +595,14 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-en="Get In Touch" data-ru="Связь">Связь</span>
-        <h2 class="section-title" data-en="Contact Me" data-ru="Контакты">Контакты</h2>
-        <p class="section-subtitle" data-en="Let's build something great together. Feel free to reach out!" data-ru="Всегда открыт к новым предложениям, стажировкам и интересным проектам">Всегда открыт к новым предложениям, стажировкам и интересным проектам</p>
+        <span class="section-tag" data-ru="Связь" data-kg="Байланыш" data-en="Get In Touch">Связь</span>
+        <h2 class="section-title" data-ru="Контакты" data-kg="Байланышуу" data-en="Contact Me">Контакты</h2>
+        <p class="section-subtitle" 
+           data-ru="Всегда открыт к новым предложениям, стажировкам и интересным проектам"
+           data-kg="Жаңы сунуштарга, стажировкаларга жана кызыктуу долбоорлорго ар дайым ачыкмын"
+           data-en="Let's build something great together. Feel free to reach out!">
+          Всегда открыт к новым предложениям, стажировкам и интересным проектам
+        </p>
       </div>
 
       <div class="contact-wrapper">
@@ -573,18 +612,21 @@
             <div class="phone-hub-header">
               <span class="phone-pulse-icon">📞</span>
               <div>
-                <span class="phone-hub-tag" data-en="Direct Contact Number" data-ru="Прямая связь по номеру">Прямая связь по номеру</span>
+                <span class="phone-hub-tag" data-ru="Прямая связь по номеру" data-kg="Түз байланыш номери" data-en="Direct Contact Number">Прямая связь по номеру</span>
                 <h3 class="phone-hub-number">0555 22 52 49</h3>
                 <span class="phone-intl">(+996 555 225 249)</span>
               </div>
             </div>
-            <p class="phone-hub-desc" data-en="Click below to call or text me instantly via WhatsApp / Telegram:" data-ru="Нажмите на любую кнопку ниже, чтобы моментально позвонить или написать в мессенджер:">
+            <p class="phone-hub-desc" 
+               data-ru="Нажмите на любую кнопку ниже, чтобы моментально позвонить или написать в мессенджер:"
+               data-kg="Телефон чалуу же мессенджерден жазуу үчүн төмөнкү баскычтарды басыңыз:"
+               data-en="Click below to call or text me instantly via WhatsApp / Telegram:">
               Нажмите на любую кнопку ниже, чтобы моментально позвонить или написать в мессенджер:
             </p>
             <div class="phone-hub-actions">
               <a href="tel:+996555225249" class="phone-hub-btn btn-call" title="Позвонить: 0555 22 52 49">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <span data-en="Call Now" data-ru="Позвонить">Позвонить</span>
+                <span data-ru="Позвонить" data-kg="Чалуу" data-en="Call Now">Позвонить</span>
               </a>
               <a href="https://wa.me/996555225249" target="_blank" rel="noopener" class="phone-hub-btn btn-wa" title="WhatsApp: 0555 22 52 49">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.182 8.182 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23z"/></svg>
@@ -603,7 +645,7 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div class="contact-info">
-                <h3 data-en="Phone" data-ru="Телефон">Телефон</h3>
+                <h3 data-ru="Телефон" data-kg="Телефон" data-en="Phone">Телефон</h3>
                 <p>0555 22 52 49</p>
               </div>
             </a>
@@ -661,21 +703,30 @@
 
         <!-- Быстрая форма отправки сообщения -->
         <form class="contact-form" id="contactForm">
-          <h3 data-en="Send a Message" data-ru="Написать сообщение">Написать сообщение</h3>
+          <h3 data-ru="Написать сообщение" data-kg="Билдирүү калтыруу" data-en="Send a Message">Написать сообщение</h3>
           <div class="form-group">
-            <input type="text" id="senderName" placeholder="Ваше имя" required>
+            <input type="text" id="senderName" 
+                   data-ru-ph="Ваше имя" data-kg-ph="Атыңыз" data-en-ph="Your Name"
+                   placeholder="Ваше имя" required>
           </div>
           <div class="form-group">
-            <input type="email" id="senderEmail" placeholder="Ваш Email" required>
+            <input type="email" id="senderEmail" 
+                   data-ru-ph="Ваш Email" data-kg-ph="Email дарегиңиз" data-en-ph="Your Email"
+                   placeholder="Ваш Email" required>
           </div>
           <div class="form-group">
-            <textarea id="senderMsg" rows="4" placeholder="Ваше сообщение или предложение..." required></textarea>
+            <textarea id="senderMsg" rows="4" 
+                      data-ru-ph="Ваше сообщение или предложение..." data-kg-ph="Билдирүүңүз же сунушуңуз..." data-en-ph="Your message or proposal..."
+                      placeholder="Ваше сообщение или предложение..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">
-            <span data-en="Send Message" data-ru="Отправить сообщение">Отправить сообщение</span>
+            <span data-ru="Отправить сообщение" data-kg="Билдирүүнү жөнөтүү" data-en="Send Message">Отправить сообщение</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
           </button>
-          <div class="form-feedback hidden" id="formFeedback">
+          <div class="form-feedback hidden" id="formFeedback"
+               data-ru="✓ Спасибо за сообщение! Я отвечу вам в ближайшее время."
+               data-kg="✓ Билдирүүңүз үчүн рахмат! Жакынкы арада жооп берем."
+               data-en="✓ Thank you for your message! I will reply shortly.">
             ✓ Спасибо за сообщение! Я отвечу вам в ближайшее время.
           </div>
         </form>
@@ -688,10 +739,10 @@
     <div class="container footer-content">
       <div class="footer-left">
         <a href="#hero" class="footer-logo">keldibek<span class="accent-text">.dev</span></a>
-        <p data-en="© 2026 Keldibek Kanatbekov. All rights reserved." data-ru="© 2026 Келдибек Канатбеков. Все права защищены.">© 2026 Келдибек Канатбеков. Все права защищены.</p>
+        <p data-ru="© 2026 Келдибек Канатбеков. Все права защищены." data-kg="© 2026 Келдибек Канатбеков. Бардык укуктар корголгон." data-en="© 2026 Keldibek Kanatbekov. All rights reserved.">© 2026 Келдибек Канатбеков. Все права защищены.</p>
       </div>
       <div class="footer-right">
-        <p data-en="Built with passion, clean code & sports discipline." data-ru="Создано с упорством, чистым кодом и спортивной дисциплиной.">Создано с упорством, чистым кодом и спортивной дисциплиной.</p>
+        <p data-ru="Создано с упорством, чистым кодом и спортивной дисциплиной." data-kg="Эрктүүлүк, таза код жана спорттук тартип менен жасалды." data-en="Built with passion, clean code & sports discipline.">Создано с упорством, чистым кодом и спортивной дисциплиной.</p>
       </div>
     </div>
   </footer>
