@@ -116,8 +116,9 @@
               <span data-en="Explore Projects" data-ru="Смотреть проекты">Смотреть проекты</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#contact" class="btn btn-outline">
-              <span data-en="Contact Me" data-ru="Связаться со мной">Связаться со мной</span>
+            <a href="tel:+996555225249" class="btn btn-outline" title="Позвонить: 0555 22 52 49">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>0555 22 52 49</span>
             </a>
             <a href="https://github.com/kanadbekovboomu-bot" target="_blank" rel="noopener" class="btn btn-ghost" title="GitHub Profile">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -143,6 +144,7 @@
               <pre><code><span class="code-kw">const</span> <span class="code-var">developer</span> = {
   <span class="code-prop">name</span>: <span class="code-str">'Келдибек Канатбеков'</span>,
   <span class="code-prop">role</span>: <span class="code-str">'Frontend Developer'</span>,
+  <span class="code-prop">phone</span>: <span class="code-str">'0555 22 52 49'</span>,
   <span class="code-prop">experience</span>: <span class="code-str">'3 месяца обучения'</span>,
   <span class="code-prop">stack</span>: [
     <span class="code-str">'HTML5'</span>, <span class="code-str">'CSS3/Flexbox'</span>,
@@ -565,55 +567,96 @@
       </div>
 
       <div class="contact-wrapper">
-        <div class="contact-cards-grid">
-          <a href="https://github.com/kanadbekovboomu-bot" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-              </svg>
+        <div class="contact-left-col">
+          <!-- Блок быстрой связи по номеру -->
+          <div class="phone-hub-card">
+            <div class="phone-hub-header">
+              <span class="phone-pulse-icon">📞</span>
+              <div>
+                <span class="phone-hub-tag" data-en="Direct Contact Number" data-ru="Прямая связь по номеру">Прямая связь по номеру</span>
+                <h3 class="phone-hub-number">0555 22 52 49</h3>
+                <span class="phone-intl">(+996 555 225 249)</span>
+              </div>
             </div>
-            <div class="contact-info">
-              <h3>GitHub</h3>
-              <p>kanadbekovboomu-bot</p>
+            <p class="phone-hub-desc" data-en="Click below to call or text me instantly via WhatsApp / Telegram:" data-ru="Нажмите на любую кнопку ниже, чтобы моментально позвонить или написать в мессенджер:">
+              Нажмите на любую кнопку ниже, чтобы моментально позвонить или написать в мессенджер:
+            </p>
+            <div class="phone-hub-actions">
+              <a href="tel:+996555225249" class="phone-hub-btn btn-call" title="Позвонить: 0555 22 52 49">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span data-en="Call Now" data-ru="Позвонить">Позвонить</span>
+              </a>
+              <a href="https://wa.me/996555225249" target="_blank" rel="noopener" class="phone-hub-btn btn-wa" title="WhatsApp: 0555 22 52 49">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.182 8.182 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/+996555225249" target="_blank" rel="noopener" class="phone-hub-btn btn-tg" title="Telegram: 0555 22 52 49">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.94 1.23-5.48 3.61-.52.36-.99.54-1.42.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.03-.74 4.04-1.76 6.73-2.92 8.08-3.49 3.85-1.6 4.65-1.88 5.17-1.89.11 0 .37.03.54.17.14.11.18.26.2.37-.01.06.01.24 0 .38z"/></svg>
+                <span>Telegram</span>
+              </a>
             </div>
-          </a>
+          </div>
 
-          <a href="mailto:kanadbekovboomu.sbdc@gmail.com" class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="M22 6l-10 7L2 6"/>
-              </svg>
-            </div>
-            <div class="contact-info">
-              <h3>Email</h3>
-              <p>kanadbekovboomu.sbdc@gmail.com</p>
-            </div>
-          </a>
+          <div class="contact-cards-grid">
+            <a href="tel:+996555225249" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-info">
+                <h3 data-en="Phone" data-ru="Телефон">Телефон</h3>
+                <p>0555 22 52 49</p>
+              </div>
+            </a>
 
-          <a href="https://t.me/" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.94 1.23-5.48 3.61-.52.36-.99.54-1.42.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.03-.74 4.04-1.76 6.73-2.92 8.08-3.49 3.85-1.6 4.65-1.88 5.17-1.89.11 0 .37.03.54.17.14.11.18.26.2.37-.01.06.01.24 0 .38z"/>
-              </svg>
-            </div>
-            <div class="contact-info">
-              <h3>Telegram</h3>
-              <p>@keldibek_dev</p>
-            </div>
-          </a>
+            <a href="https://wa.me/996555225249" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.182 8.182 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>WhatsApp</h3>
+                <p>0555 22 52 49</p>
+              </div>
+            </a>
 
-          <a href="https://wa.me/" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.182 8.182 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23z"/>
-              </svg>
-            </div>
-            <div class="contact-info">
-              <h3>WhatsApp</h3>
-              <p>Написать в WhatsApp</p>
-            </div>
-          </a>
+            <a href="https://t.me/+996555225249" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.94 1.23-5.48 3.61-.52.36-.99.54-1.42.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.03-.74 4.04-1.76 6.73-2.92 8.08-3.49 3.85-1.6 4.65-1.88 5.17-1.89.11 0 .37.03.54.17.14.11.18.26.2.37-.01.06.01.24 0 .38z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>Telegram</h3>
+                <p>0555 22 52 49</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/kanadbekovboomu-bot" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>kanadbekovboomu-bot</p>
+              </div>
+            </a>
+
+            <a href="mailto:kanadbekovboomu.sbdc@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M22 6l-10 7L2 6"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>kanadbekovboomu.sbdc@gmail.com</p>
+              </div>
+            </a>
+          </div>
         </div>
 
         <!-- Быстрая форма отправки сообщения -->
